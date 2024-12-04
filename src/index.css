@@ -1,0 +1,16 @@
+body{
+    padding: 0;
+
+    margin: 0;
+    /* -webkit-font-smooting:  anti;
+    -moz-osx- */
+} 
+*{
+    margin: 0;
+}
+.app{
+    /* margin: 5px;
+    padding: 5px; */
+    background-color: #fafaff;
+
+}

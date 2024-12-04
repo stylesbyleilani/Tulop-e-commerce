@@ -1,0 +1,131 @@
+
+
+/* Explore Section Styles */
+.explore-section {
+    width: 100%;
+    /* background-color: #f9f9f9; */
+    padding: 4rem 0;
+    /* background-color: #d0dee4; */
+
+  }
+  
+  .explore-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .explore-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #292c36;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  
+  .explore-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .explore-item {
+    text-decoration: none;
+    color: #292c36;
+    transition: transform 0.3s ease;
+  }
+  
+  .explore-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .explore-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .explore-item-image {
+    /* width: 100%; */
+    /* width: 200px; */
+    /* aspect-ratio: 1 / 1; */
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-img {
+    width: 120px;
+    height: 120px;
+     /* padding: 5px; */
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+  }
+  
+  .explore-item-label {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  /* Responsive Breakpoints */
+  @media screen and (max-width: 1024px) {
+    .explore-grid {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.25rem;
+    }
+  
+    .explore-container h1 {
+      font-size: 2.25rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .explore-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  
+    .explore-container h1 {
+      font-size: 2rem;
+    }
+
+
+
+    /* .item-img {
+        width: 50px;
+        height: 50px;
+
+        object-fit: cover;
+      }
+  
+    .explore-grid {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+    } */
+  }
+  
+  @media screen and (max-width: 480px) {
+    .explore-section {
+      padding: 2rem 0;
+    }
+    .item-img {
+        width: 50px;
+        height: 50px;
+
+        object-fit: cover;
+      }
+  
+    .explore-grid {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+    }
+  
+    .explore-container h1 {
+      font-size: 1.75rem;
+    }
+  }

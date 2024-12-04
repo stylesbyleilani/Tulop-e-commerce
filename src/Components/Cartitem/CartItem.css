@@ -1,0 +1,146 @@
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .cart-desktop {
+    display: block;
+  }
+  
+  .cart-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    background-color: #f4f4f4;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .cart-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+  }
+  
+  .cart-product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantity-controls button {
+    width: 30px;
+    height: 30px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .cart-mobile {
+    display: none;
+  }
+  
+  .cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+  }
+  
+  .total-price {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .checkout{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .check-btn{
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #06122c;
+
+    color: #f4f4f4;
+    font-size: 20px;
+    width: 500px;
+    
+  }
+  .check-btn:hover{
+    background-color: #0a235e;
+  }
+
+  /* Mobile Responsive Design */
+  @media screen and (max-width: 768px) {
+    .cart-desktop {
+      display: none;
+    }
+  
+    .cart-mobile {
+      display: block;
+    }
+  
+    .mobile-cart-item {
+      background-color: #fff;
+      border: 1px solid #eee;
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+  
+    .mobile-item-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+  
+    .mobile-item-header img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+  
+    .mobile-item-details {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .item-name {
+      font-weight: bold;
+    }
+  
+    .mobile-item-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .mobile-item-total {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }

@@ -1,0 +1,154 @@
+
+
+
+     .navbar {
+      background-color: #ffffff;
+      /* background-color: #d0dee4; */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+  }
+  
+  .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  .logo h2 {
+      font-size: 1.5rem;
+      color: #292c36;
+      font-weight: bold;
+  }
+  
+  .nav-list {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+  }
+  
+  .nav-link {
+      text-decoration: none;
+      color: #292c36;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+  }
+  
+  .nav-list li {
+      position: relative;
+      padding-bottom: 0.5rem;
+  }
+  
+  .nav-list li hr {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border: 1.5px solid #292c36;
+      margin: 0;
+  }
+  
+  .navbar-icons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 20px;
+
+  }
+  
+  .icon-cart {
+      position: relative;
+  }
+
+  .cart-count {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background-color: red;
+      color: white;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.7rem;
+  }
+  
+  .menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1024px) {
+      .nav-list {
+          gap: 1rem;
+      }
+  }
+  
+  @media screen and (max-width: 768px) {
+      .menu-toggle {
+          display: block;
+      }
+  
+      .nav-menu {
+          position: fixed;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 30%;
+          /* height: 100vh; */
+          background-color: #ffffff;
+          transition: 0.3s;
+          z-index: 99;
+          padding-top: 4rem;
+      }
+  
+      .nav-menu.active {
+          left: 0;
+      }
+  
+      .nav-list {
+          flex-direction: column;
+          align-items: center;
+          gap: 2rem;
+      }
+      .nav-menu.active .menu-toggle {
+        color: red; /* Optionally, make the "X" stand out */
+    }
+    
+  
+      .navbar-icons {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #ffffff;
+          /* padding: 1rem; */
+          padding: 10px;
+          padding-right: 30px;
+          justify-content: space-around;
+          box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+          /* font-size: 30px; */
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+      .logo h2 {
+          font-size: 1.2rem;
+      }
+  
+      .nav-list {
+          gap: 1.5rem;
+      }
+  }
+  .nav-menu.active .menu-toggle {
+    color: red; /* Optionally, make the "X" stand out */
+}
