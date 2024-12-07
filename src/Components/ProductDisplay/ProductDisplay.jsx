@@ -1,68 +1,5 @@
 
-// import React, { useContext } from 'react'
 import "./ProductDisplay.css"
-// import { FaStar } from "react-icons/fa";
-// import { FaRegStar } from "react-icons/fa6";
-// import { ShopContext } from '../../Context/Context';
-
-// const ProductDisplay = (props) => {
-
-//     const {product} = props;
-//     const {addtoCart,removeCart} = useContext(ShopContext)
-
-//     if (!addtoCart || !removeCart) {
-//       console.error("addtoCart or removeCart function is not available");
-//   }
-
-//   return (
-//     <div className='productdisplay'>
-
-//      <div className="productdisplay-let">
-//       <div className="productdisplay-img-list">
-//         <img src={product.image} alt="" />
-//         <img src={product.image} alt="" />
-//         <img src={product.image} alt="" />
-//         <img src={product.image} alt="" />
-//       </div>
-//       <div className="productdisplay-img">
-//         <img className='productdisplay-main-img' src={product.image} alt="" />
-//       </div>
-//      </div>
-
-//      <div className="productdisplay-right">
-//       <div className="old-price">
-//         ${product.price}
-//       </div>
-
-//       <div className="productdisplay-right-star">
-//  <FaStar/>
-//  <FaStar/>
-//  <FaStar/>
-//  <FaStar/>
-//  <FaRegStar/>
-//  </div>
-
-//      <h1>{product.name} </h1>
-//      <p>{product.description} </p>
-// <div className="btn">
-// <button onClick={()=>{addtoCart(product.Id)}}>Add to cart</button>
-
-// </div>
-//      {/* <button onClick={()=>{addtoCart(product.Id)}}>Add to cart</button> */}
-// </div>
-
-
-//     </div>
-//   )
-// }
-
-// export default ProductDisplay
-
-
-
-
-
-
 import React, { useContext, useState } from 'react'
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { ShopContext } from '../../Context/Context';
@@ -71,7 +8,6 @@ const ProductDisplay = ({ product }) => {
   const { addtoCart } = useContext(ShopContext);
   const [selectedImage, setSelectedImage] = useState(product.image);
 
-  // Render star rating dynamically
   const renderStarRating = (rating) => {
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 >= 0.5;
@@ -97,7 +33,6 @@ const ProductDisplay = ({ product }) => {
     }
   };
 
-  // Image gallery thumbnails
   const productImages = [
     product.image,
     product.image,

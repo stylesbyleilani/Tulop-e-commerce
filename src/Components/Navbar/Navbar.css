@@ -87,7 +87,6 @@
       z-index: 101; 
   }
   
-  /* Responsive Styles */
   @media screen and (max-width: 1024px) {
       .nav-list {
           gap: 1rem;
@@ -155,5 +154,5 @@
       }
   }
   .nav-menu.active .menu-toggle {
-    color: red; /* Optionally, make the "X" stand out */
+    color: red; 
 }

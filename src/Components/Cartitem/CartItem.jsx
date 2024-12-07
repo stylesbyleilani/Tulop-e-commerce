@@ -3,9 +3,6 @@
 
 import "./CartItem.css"
 
-
-
-
 import React, { useContext } from 'react';
 import './CartItem.css';
 import { ShopContext } from "../../Context/Context";
@@ -23,7 +20,6 @@ const CartItem = () => {
 
   return (
     <div className="cart-container">
-      {/* Desktop View */}
       <div className="cart-desktop">
         <div className="cart-header">
           <span>Product</span>
@@ -95,7 +91,6 @@ const CartItem = () => {
         )}
       </div>
 
-      {/* Total Price Summary */}
       <div className="cart-summary">
         <span>Total Cart Value:</span>
         <span className="total-price">${calculateTotalPrice()}</span>

@@ -93,7 +93,6 @@
     background-color: #0a235e;
   }
 
-  /* Mobile Responsive Design */
   @media screen and (max-width: 768px) {
     .cart-desktop {
       display: none;
