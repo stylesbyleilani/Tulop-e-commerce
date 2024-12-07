@@ -1,58 +1,7 @@
 
 
 
-
-// import React, { useContext } from 'react'
 import "./CartItem.css"
-// import { ShopContext } from '../../Context/Context'
-
-// const CartItem = () => {
-//    const {addtoCart, removeCart, category_list, cartitem} = useContext(ShopContext)
-   
-//    return (
-//      <div className='cartitems'>
-//        <div className="cart-main">
-//          <p>Product</p>
-//          <p>Title</p>
-//          <p>Price</p>
-//          <p>Quantity</p>
-//          <p>Total</p>
-//          <p>Remove</p>
-//        </div>
-//        <hr />
-//        {category_list.map((i)=>{
-//            if (cartitem[i.Id] > 0){
-//              console.log(cartitem, i ,"cart item values")
-//              return(
-//                 <div className="c" key={i.Id}>
-//                  <div className="cartitem-ormat">
-//                    <img src={i.image} alt="" className='cart-icon' />
-//                    <p>{i.name} </p>
-//                    <p>${i.price} </p>
-//                    <div className="quantity-controls">
-//                      <button onClick={() => removeCart(i.Id)}>-</button>
-//                      <button className='cart-quantity'>{cartitem[i.Id]}</button>
-//                      <button onClick={() => addtoCart(i.Id)}>+</button>
-//                    </div>
-//                    <p>${i.price * cartitem[i.Id]}</p>
-//                    <img 
-//                      src="" 
-//                      alt="" 
-//                      className='remove-icon' 
-//                      onClick={() => removeCart(i.Id)} 
-//                    />
-//                  </div>
-//                  <hr />
-//                </div>
-//              )
-//            }
-//            return null;
-//        })}
-//      </div>
-//    )
-// }
-
-// export default CartItem
 
 
 
@@ -60,6 +9,7 @@ import "./CartItem.css"
 import React, { useContext } from 'react';
 import './CartItem.css';
 import { ShopContext } from "../../Context/Context";
+import { Link } from "react-router-dom";
 
 const CartItem = () => {
   const { addtoCart, removeCart, category_list, cartitem, removeItemCompletely } = useContext(ShopContext);
@@ -151,12 +101,17 @@ const CartItem = () => {
         <span className="total-price">${calculateTotalPrice()}</span>
       </div>
 
-      <div className="checkout">
+    <Link to="/checkout" > <div className="checkout">
         <button className="check-btn">Checkout Now</button>
-      </div>
+      </div></Link>
 
     </div>
   );
 }
 
 export default CartItem;
+
+
+
+
+

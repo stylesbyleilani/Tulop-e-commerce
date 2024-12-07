@@ -47,7 +47,7 @@
   }
   
   .signup-wrapper button {
-    background-color: #007bff;
+    background-color: #040b11;
     color: white;
     border: none;
     padding: 12px;
@@ -58,7 +58,7 @@
   }
   
   .signup-wrapper button:hover {
-    background-color: #0056b3;
+    background-color: #0a1d31;
   }
   
   .login-link {

@@ -500,7 +500,7 @@ export const category_list = [
     },
     {
         Id:14,
-        name:"Rice and beansApple series 3",
+        name:"Apple series 3",
         image:w2,
         price:125.00,
         description:"features the largest, most advanced display yet, breakthrough health innovations, and is the most durable Apple Watch ever ",

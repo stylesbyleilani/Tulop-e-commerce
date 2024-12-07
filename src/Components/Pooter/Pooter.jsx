@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
 
         <div className="pooter-section">
-          <h2>Company</h2>
+          <h2>Shop</h2>
           <div className="pooter-links">
             <a href="#home">About us</a>
             <a href="#about">Customers</a>
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <div className="pooter-section">
-          <h2>Industries</h2>
+          <h2>Company</h2>
           <div className="pooter-links">
             <a href="#metal">Precision Metalforming</a>
             <a href="#manufacturing">Industrial Manufacturing</a>
@@ -52,7 +52,7 @@ const Footer = () => {
         <div className="pooter-section">
           <h2>Get In Touch</h2>
           <div className="pooter-contact">
-            <p>hello@prodmast.com</p>
+            <p>hello@tulop.com</p>
             <div className="pooter-social-icons">
               <a href="#linkedin" className="pooter-social-icon">
                 <FaLinkedinIn />
