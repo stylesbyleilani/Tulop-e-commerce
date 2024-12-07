@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { FaAppStoreIos, FaFacebook, FaLinkedinIn } from 'react-icons/fa';
-import './pooter.CSS'
+import './pooter.css'
 const Footer = () => {
   return (
     <footer className="pooter">
