@@ -3,7 +3,7 @@
 
 
 import React, { useContext } from 'react';
-import "./Css/ShopCategory.css";
+import "./Css/ShopCategory.css"
 import { ShopContext } from '../Context/Context';
 import { IoMdArrowDropdown } from "react-icons/io";
 import Items from '../Components/Items/Items';
