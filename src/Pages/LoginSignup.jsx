@@ -1,15 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
@@ -42,17 +32,14 @@ const LoginSignup = () => {
     setLoading(true);
 
     try {
-      // Validate terms agreement
       if (!formData.agreedToTerms) {
         toast.error('Please agree to the terms of use and privacy policy');
         setLoading(false);
         return;
       }
 
-      // Create user with email and password
       const res = await createUserWithEmailAndPassword(auth, formData.email, formData.password);
 
-      // Store additional user info in Firestore
       await setDoc(doc(db, "users", res.user.uid), {
         username: formData.name,
         email: formData.email
