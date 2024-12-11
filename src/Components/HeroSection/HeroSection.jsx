@@ -1,9 +1,11 @@
 
+
+
+
 import "./HeroSection.css"
 import React from 'react'
 import { Link } from 'react-router-dom'
 import back1 from "../../assets/images/back1.jpg"
-import back2 from "../../assets/images/back2.jpg"
 
 const HeroSection = () => {
   return (
@@ -23,6 +25,7 @@ const HeroSection = () => {
               src={back1} 
               alt="Gadgets Showcase" 
               className="hero-img"
+              loading="lazy" 
             />
           </div>
         </div>

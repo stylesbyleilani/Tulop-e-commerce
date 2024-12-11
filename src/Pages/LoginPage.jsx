@@ -1,15 +1,14 @@
 
-
 import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from 'react-router-dom';
-import "./Css/LoginSignup.css";
+import { auth } from '../Lib/firebase'; 
+import "./Css/LoginPage.css"
 
 const LoginPage = () => {
   const [loading, setLoading] = useState(false);
-  const auth = getAuth();
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
