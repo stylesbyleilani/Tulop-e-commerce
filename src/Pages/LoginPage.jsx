@@ -5,7 +5,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from 'react-router-dom';
 import { auth } from '../Lib/firebase'; 
-import "./Css/LoginPage.css"
 
 const LoginPage = () => {
   const [loading, setLoading] = useState(false);

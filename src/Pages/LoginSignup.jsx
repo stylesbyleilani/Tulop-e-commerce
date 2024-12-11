@@ -6,7 +6,6 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { db } from '../Lib/firebase';
 import { doc, setDoc } from 'firebase/firestore';
 import { Link, useNavigate } from 'react-router-dom';
-import "./Css/LoginSignup.css"
 const LoginSignup = () => {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({

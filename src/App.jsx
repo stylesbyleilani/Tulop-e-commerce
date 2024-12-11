@@ -11,7 +11,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Pooter from './Components/Pooter/Pooter';
 import ErrorBoundary from './Components/ErrorBoundries';
 import LoadingSpinner from './Components/LoadingSpinner/LoadingSpinner';
-
+import "./Pages/global.css"
 const Shop = lazy(() => import('./Pages/Shop'));
 const ShopCategory = lazy(() => import('./Pages/ShopCategory'));
 const Product = lazy(() => import('./Pages/Product'));
