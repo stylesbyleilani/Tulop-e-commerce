@@ -20,7 +20,6 @@ const ShopContextProvider = (props) => {
     const [cartItemCount, setCartItemCount] = useState(0);
 
     useEffect(() => {
-        // Calculate total items in cart
         const totalItems = Object.values(cartitem).reduce((total, quantity) => total + quantity, 0);
         setCartItemCount(totalItems);
     }, [cartitem]);

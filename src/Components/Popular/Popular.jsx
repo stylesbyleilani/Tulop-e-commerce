@@ -1,33 +1,5 @@
 
-// import React from 'react'
 import './Popular.css'
-// import { laptops } from '../../assets/Constant'
-// // import { laptops } from '../../assets/Constant'
-// // import { new_collections } from '../../assets/Constant'
-// import Items from '../Items/Items'
-// const Popular = () => {
-//   return (
-//     <div className='popular'>
-//       <h1>Popular in Laptops</h1>
-//       <hr />
-//       <div className="popular-item">
-//         {laptops.map((items, index)=>{
-//             return(
-//                 // <Items key={index} id={items.id} name={items.name} image={items.image} new_price={items.price} old_price={items.price} />
-//                 <Items key={index} id={items.id} name={items.name} image={items.image} new_price={items.price} old_price={items.price} />
-
-//             )
-//         })}
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Popular
-
-
-
-
 import React from 'react'
 import { laptops } from '../../assets/Constant'
 import Items from '../Items/Items'

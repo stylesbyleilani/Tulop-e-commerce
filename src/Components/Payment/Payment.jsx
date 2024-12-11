@@ -1,15 +1,4 @@
 
-// import React from 'react'
-// import "./Payment.CSS"
-// const Payment = () => {
-//   return (
-//     <div>Payment</div>
-//   )
-// }
-
-// export default Payment
-
-
 
 import React, { useContext, useState } from 'react';
 import { ShopContext } from "../../Context/Context";

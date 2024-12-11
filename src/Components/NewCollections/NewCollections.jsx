@@ -1,6 +1,5 @@
 import React from 'react'
 import "./NewCollections.css"
-// import { category_list } from '../../assets/Constant'
 import { new_collections } from '../../assets/Constant'
 import Items from '../Items/Items'
 const NewCollections = () => {
