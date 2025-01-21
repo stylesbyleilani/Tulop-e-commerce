@@ -136,7 +136,7 @@
     font-size: 20px;
     width: 500px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
   }
   
   .place-order-btn:hover {

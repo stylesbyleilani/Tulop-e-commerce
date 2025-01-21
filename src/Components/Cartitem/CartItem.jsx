@@ -96,7 +96,7 @@ const CartItem = () => {
         <span className="total-price">${calculateTotalPrice()}</span>
       </div>
 
-    <Link to="/checkout" > <div className="checkout">
+    <Link style={{textDecoration: "none"}} to="/checkout" > <div className="checkout">
         <button className="check-btn">Checkout Now</button>
       </div></Link>
 

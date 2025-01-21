@@ -13,7 +13,7 @@ const NewCollections = () => {
             <Items key={index} 
             id={items.id} 
             name={items.name}  
-               description={items.description}
+              //  description={items.description}
              image={items.image}
               new_price={items.price} 
               old_price={items.price} />

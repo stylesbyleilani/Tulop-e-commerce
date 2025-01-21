@@ -183,7 +183,7 @@ const Checkout = () => {
           </div>
         </div>
 
-    <Link to="/payment" >  <div className="checkout-actions">
+    <Link style={{textDecoration: "none"}} to="/payment" >  <div className="checkout-actions">
           <button type="submit" className="place-order-btn">
             Place Order
           </button>
