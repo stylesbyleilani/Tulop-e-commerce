@@ -349,38 +349,6 @@ export const new_collections =  [
         description:"Amazing visuals ",
         category:"tablet"
     },
-    // {
-    //     id:9,
-    //     name:"Rice and beans",
-    //     image:tab2,
-    //     price:12,
-    //     description:"provides essential nutrient ",
-    //     category:"tablet"
-    // },
-    // {
-    //     id:10,
-    //     name:"Rice and beans",
-    //     image:tab3,
-    //     price:12,
-    //     description:"provides essential nutrient ",
-    //     category:"tablet"
-    // },
-    // {
-    //     id:11,
-    //     name:"Rice and beans",
-    //     image:tab4,
-    //     price:12,
-    //     description:"provides essential nutrient ",
-    //     category:"tablet"
-    // },
-    // {
-    //     id:12,
-    //     name:"Rice and beans",
-    //     image:tab5,
-    //     price:12,
-    //     description:"provides essential nutrient ",
-    //     category:"tablet"
-    // },
 ]
 
 
